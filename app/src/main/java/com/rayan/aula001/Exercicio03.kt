@@ -5,11 +5,10 @@ class Exercicio03 {
 
 fun main() {
 
-    var value = 5;
+    var result = calc(10, 10);
+    print("The result is: $result");
+}
 
-    if(value % 2 == 0) {
-        println("The value $value is par")
-    } else {
-        println("The value $value is primor")
-    }
+fun calc(n1: Int, n2: Int,  operation: (Int,Int) -> Int) {
+    operation(n1, n2);
 }

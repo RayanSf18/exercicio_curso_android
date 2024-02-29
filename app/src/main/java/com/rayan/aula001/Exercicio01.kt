@@ -5,11 +5,10 @@ class Exercicio01 {
 
 fun main() {
 
-    var mutavel : Int = 6;
-    println(mutavel);
+    var result = sum(10, 10);
+    print("The result is: $result");
+}
 
-    mutavel = 5;
-    println(mutavel)
-
-    // Não vai dar nenhum problema por que uma variavel do tipo var não e imutavel.
+fun sum(n1:Int, n2:Int) : Int {
+    return n1 + n2;
 }

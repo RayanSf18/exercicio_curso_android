@@ -5,10 +5,11 @@ class Exercicio05 {
 
 fun main() {
 
-    val numeros: Array<Int> = arrayOf(40);
+    var nomes = listOf("Joao", "Pedro", "Fernanda", "Maria");
 
-    for (i in 0..numeros.size - 1) {
-        var value : Int = i * 2;
-        numeros.set(i, value);
+    var nomesComMensagem = nomes.map { n -> "Ola $n" };
+
+    nomesComMensagem.forEach {
+        println(it);
     }
 }

@@ -5,10 +5,13 @@ class Exercicio04 {
 
 fun main() {
 
-    var value = 6;
+    var numeros = ArrayList<Int>();
 
-    when {
-        value % 2 == 0 -> println("The value $value is par");
-        else -> println("The value $value is primor");
+    for (i in 0..100 - 1) {
+        numeros.add(i, i + 1);
     }
+
+    var listaSoDePares = numeros.filter { n -> n % 2 == 0 };
+
+    println(listaSoDePares);
 }
